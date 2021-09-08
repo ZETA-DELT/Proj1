@@ -7,6 +7,7 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   font-family: "Lato", sans-serif;
+  line-height: 1.6;
 }
 :root {
   --bg-color: #0f0f0f;
@@ -53,7 +54,7 @@ hr {
   height: 150px;
   color: black;
   text-align: right;
-  padding-top: 50px;
+  margin-top: 150px;
 }
 .quote figure {
   background-color: rgba(0, 0, 0, 0.5);
@@ -62,7 +63,7 @@ hr {
   width: 35%;
   border-radius: 9px;
   padding-right: 20px;
-  margin-top: 25%;
+  /* margin-top: 25%; */
 }
 div.firstimage {
   margin: 10px auto;
@@ -82,7 +83,7 @@ div.firstimage {
   border-color: black;
   border-style: none;
   border-top: 0px;
-  height: 15px;
+  height: 12px;
   border-radius: 5px;
   position: relative;
 }
@@ -109,17 +110,20 @@ div.firstimage {
   font-size: xx-large;
   color: #13363a;
   border-radius: 20px;
+  background: linear-gradient(to right, hsl(98 100% 62%), hsl(204 100% 59%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 .navbar h1:hover {
-  color: #477153;
   background-color: transparent;
   cursor: pointer;
 }
 
 /* LOGO style*/
 .navbar a.logo {
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 30px;
+  font-weight: 600;
   height: 25px;
 }
 /* hover feature*/
@@ -145,6 +149,12 @@ div.firstimage {
   margin-top: 0;
   justify-content: space-between;
 }
+.Spart {
+  padding-top: 500px;
+}
+/* .sidebar .secondpart {
+  padding-bottom: 0;
+} */
 .imgtitle {
   text-align: center;
   margin: 10px;
@@ -162,6 +172,43 @@ div.firstimage {
   flex-flow: row;
   padding-bottom: 100px;
   padding-top: 100px;
+  font-family: "Cairo", sans-serif;
+  font-family: "Livvic", sans-serif;
+  font-size: large;
+  font-weight: 900;
+  text-align: justify;
+}
+.secondpart h3 {
+  text-decoration: underline;
+}
+.thrdpart {
+  background-color: #79b4b7;
+  font-family: "Cairo", sans-serif;
+  font-family: "Livvic", sans-serif;
+  font-size: large;
+  font-weight: 900;
+  text-align: justify;
+}
+.area {
+  margin-left: 10px;
+  padding-right: 10px;
+}
+.thrdpart h3 {
+  text-align: center;
+  font-size: larger;
+}
+.thrdpart img {
+  /* margin-left: 10px; */
+  width: fit-content;
+}
+.thrdpart h4 {
+  font-size: larger;
+  text-decoration: underline;
+}
+.sech {
+  padding-bottom: 150px;
+  font-weight: 900;
+  font-size: xx-large;
 }
 
 /* ----------------- Footer --------------------- */
@@ -170,7 +217,7 @@ footer.footer {
   height: 100%;
   background: var(--bg-color);
   position: relative;
-  margin-top: 100px;
+  margin: 0 auto;
 }
 
 footer.footer .newcontainer {
@@ -279,8 +326,8 @@ footer.footer .move-up span:hover {
   .container {
     background-image: url("./Resources/img4.jpg");
     position: relative;
-    /* height: 500px;
-    max-width: 100%; */
+    /* height: 500px;*/
+    max-width: 100%;
     min-height: 100vh;
     /* background-size: 500px 500px; */
   }
@@ -304,14 +351,13 @@ footer.footer .move-up span:hover {
   .navbar {
     display: flex;
     flex-direction: column;
+    height: max-content;
   }
   .container {
-    background-image: url("./Resources/img4.jpg");
+    /* background-image: url("./Resources/img4.jpg"); */
     position: relative;
-    /* height: 500px;
-    max-width: 100%;*/
-    min-height: 250vh;
-    /* background-size: 500px 500px; */
+    height: 500px;
+    max-width: 100%;
   }
   img {
     max-width: 100%;
