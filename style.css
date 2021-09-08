@@ -136,6 +136,10 @@ div.firstimage {
   height: fit-content;
   padding-left: 10px;
 }
+.infobox h2 {
+  font-weight: 900;
+  font-size: 4rem;
+}
 .infobox img {
   width: 100%;
   padding-top: 20px;
@@ -152,9 +156,14 @@ div.firstimage {
 .Spart {
   padding-top: 500px;
 }
-/* .sidebar .secondpart {
-  padding-bottom: 0;
-} */
+.Spart h2 {
+  font-weight: 900;
+  font-size: 4rem;
+}
+.fpart h2 {
+  font-weight: 900;
+  font-size: 4rem;
+}
 .imgtitle {
   text-align: center;
   margin: 10px;
@@ -208,7 +217,7 @@ div.firstimage {
 .sech {
   padding-bottom: 150px;
   font-weight: 900;
-  font-size: xx-large;
+  font-size: 6rem;
 }
 
 /* ----------------- Footer --------------------- */
